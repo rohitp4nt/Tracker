@@ -1,4 +1,4 @@
-const obj = {};
+/* const obj = {};
 const key = 'name';
 
 obj[key] = 'John';  // Using bracket notation, this creates a property 'name' with value 'John'
@@ -6,7 +6,7 @@ obj[key] = 'John';  // Using bracket notation, this creates a property 'name' wi
 console.log(obj.name);  // Prints: John
 console.log(obj[key]);  // Prints: John
 console.log(obj.key);   // Prints: undefined (because there's no property literally named 'key')
-
+ */
 
 /* 
 const person = {};
