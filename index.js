@@ -19,6 +19,8 @@ const io=socketio(server)
 
 
 app.set('view engine','ejs')
+
+app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname,'public')))
 
 
@@ -43,6 +45,7 @@ io.on('connection',(socket)=>{ /* note that "connection" shouldn't change to,  h
 app.get('/',(req,res)=>{
     res.render('map')
 })
+
 server.listen('3000',(err) =>{
     
     console.log('server  is running');
