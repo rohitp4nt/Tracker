@@ -42,9 +42,10 @@ io.on('connection',(socket)=>{ /* note that "connection" shouldn't change to,  h
 
 
 
-app.get('/',(req,res)=>{
-    res.render('map')
-})
+app.get('/map', (req, res) => {
+    res.render('map', { title: 'Track' });
+});
+
 
 server.listen('3000',(err) =>{
     
